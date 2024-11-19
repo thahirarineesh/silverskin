@@ -1,0 +1,293 @@
+body {
+    margin: 0;
+    background-color: #097969; /* Fully green background */
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styling */
+.navbar {
+background-color: #097969;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    /* White navbar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white; /* Green text for logo */
+}
+
+.navbar .menu {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .menu a {
+    text-decoration: none;
+    color: white; /* Black text */
+    font-size: 1rem;
+}
+
+.navbar .menu a:hover {
+    color: #4CAF50; /* Green hover effect */
+}
+
+.navbar .btn {
+    padding: 10px 20px;
+    background-color: #5F9EA0; /* Green button */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.navbar .btn:hover {
+    background-color: #097969; /* Darker green on hover */
+}
+/* Dropdown Menu Styling */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+
+    color: black;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    color:black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #000000 !important; /* Black color for Hair and Skin links */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #097969; /* Green hover effect for dropdown items */
+    color: white; /* White text on hover */
+}
+
+/* Show dropdown when hovering over the dropdown button */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+/* Slider Section */
+.slider {
+    position: relative;
+    width: 100%;
+    height: 620px; /* Increased height */
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.slides {
+    display: flex;
+    position: relative;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fills the container and avoids stretching */
+    object-position: center; /* Center the image */
+    user-select: none;
+    pointer-events: none;
+}
+
+/* Show only the active slide */
+.slide.active {
+    display: block;
+}
+
+/* Navigation Buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+      background: none;/* Background color */
+
+
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 1;
+    border: none;
+    border-radius: 5px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background: rgba(0, 0, 0, 0.7); /* Darker on hover */
+}
+/* Call-to-Action Section */
+.cta {
+    background-color: #097969; /* Green background to match theme */
+    color: white; /* White text for contrast */
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 50px; /* Add spacing from previous content */
+    border-radius: 8px;
+}
+
+.cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.cta p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    background-color: #ffffff; /* White button */
+    color: #097969; /* Green text */
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #5F9EA0; /* Darker green on hover */
+    color: white; /* White text on hover */
+}
+/* Footer Styling */
+.footer {
+    background-color: #097969; /* Green background */
+    color: #ffffff; /* White text */
+    padding: 50px 20px;
+    text-align: left;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.footer-about, .footer-links, .footer-contact {
+    width: 30%;
+    margin-bottom: 20px;
+}
+.footer-about h3, .footer-links h3{
+margin-left:100px;
+}
+.footer-about h3, .footer-links h3, .footer-contact h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+
+}
+
+.footer-about p, .footer-links ul, .footer-contact p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin-left:100px;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links a, .footer-contact a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 0.95rem;
+}
+
+.footer-links a:hover, .footer-contact a:hover {
+    color: #4CAF50; /* Change color on hover */
+}
+
+.footer-bottom {
+    background-color: #066d50;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 1rem;
+}
+@media (max-width: 768px) {
+    .navbar .menu {
+        display: none; /* Hide menu items */
+    }
+
+    .navbar .menu-icon {
+        display: block; /* Show a menu icon */
+        cursor: pointer;
+    }
+
+    .navbar.active .menu {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+@media (max-width: 768px) {
+    .slider {
+        height: 400px; /* Adjust height for smaller screens */
+    }
+    .slider img {
+        object-fit: cover; /* Ensure images fit properly */
+    }
+}
+@media (max-width: 768px) {
+    footer {
+        text-align: left;
+    }
+
+    footer .columns {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+
+
