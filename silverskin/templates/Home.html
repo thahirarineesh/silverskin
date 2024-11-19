@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Silverskin Aesthetic</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+
+
+</head>
+<body>
+<nav class="navbar">
+    <div class="logo">Silverskin</div>
+    <div class="menu">
+        <a href="#home">Home</a>
+        <a href="#home">About us</a>
+        <div class="dropdown">
+            <a href="#" class="dropbtn">Services</a>
+            <div class="dropdown-content">
+                <a href="#hair">Hair</a>
+                <a href="#skin">Skin</a>
+            </div>
+        </div>
+        <a href="#blog">Contact us</a>
+    </div>
+    <a href="#appointment" class="btn">Book Appointment &#8594;</a>
+
+</nav>
+
+<!-- Image Slider Section -->
+<section class="slider">
+    <div class="slides">
+        <!-- Slide 1 -->
+        <div class="slide active">
+            <img src="{% static 'images/pic1.jpeg' %}" alt="Image 1" draggable="false">
+        </div>
+        <!-- Slide 2 -->
+        <div class="slide">
+            <img src="{% static 'images/pic2.jpg' %}" alt="Image 2" draggable="false">
+        </div>
+        <!-- Slide 3 -->
+        <div class="slide">
+            <img src="{% static 'images/pic3.jpg' %}" alt="Image 3" draggable="false">
+        </div>
+    </div>
+    <!-- Navigation Buttons -->
+    <button class="prev" onclick="prevSlide()">❮</button>
+    <button class="next" onclick="nextSlide()">❯</button>
+</section>
+<!-- Call-to-Action Section -->
+<section class="cta">
+    <div class="cta-content">
+        <h2>Book Your Appointment Today!</h2>
+        <p>Ready to experience the best in skincare? Book your appointment now and let us help you look and feel your best.</p><br>
+        <a href="#appointment" class="cta-btn">Book Now</a>
+    </div>
+</section>
+<br>
+<br>
+
+<br>
+<br>
+
+<br>
+
+<br>
+<hr>
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-content">
+        <!-- About Us Section -->
+        <div class="footer-about">
+<!--            <h3>About Us</h3>-->
+            <p>At Silverskin Aesthetic, we believe in helping you age gracefully while embracing your natural beauty. Our expert team offers personalized skincare and rejuvenation treatments to enhance your glow and boost your confidence. Experience luxury and care designed to make you feel your best, inside and out.</p>
+        <i class="fas fa-phone-alt"></i>
+        <span>+91 8606811987 ,     +91 6238905823</span>
+        </div>
+
+
+
+
+
+        <!-- Quick Links Section -->
+        <div class="footer-links">
+            <h3>Useful Links</h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
+
+            </ul>
+        </div>
+
+        <!-- Contact Us Section -->
+        <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p><a href="tel:+919446967638">+91 8606811987</a></p>
+            <p><a href="mailto:admin@healersvalley.in">silverskin@gmail.com</a></p>
+            <p>1st Floor, Abcd, xyz Rd, Thrissur, Kerala 680651</p>
+        </div>
+    </div>
+<!--    <div>-->
+<!--                    <h3>Opening Hours</h3>-->
+
+
+<!--    </div>-->
+
+    <!-- Footer Bottom Section -->
+    <div class="footer-bottom">
+        <p>&copy; 2024 SilverSkin. All rights reserved. designed by RAT</p>
+    </div>
+</footer>
+
+
+<script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
